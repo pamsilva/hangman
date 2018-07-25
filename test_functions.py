@@ -1,4 +1,5 @@
-from main import ATTEMPT_KEY, WORD_KEY, WORD_VISIBILITY_KEY, _hide_invisible_words, play
+from main import play
+from utils import ATTEMPT_KEY, WORD_KEY, WORD_VISIBILITY_KEY, hide_invisible_words
 
 
 def test_hide_invisible_words():
@@ -11,7 +12,7 @@ def test_hide_invisible_words():
     }
     expected = '_o_a__'
 
-    assert _hide_invisible_words(initial_state) == expected
+    assert hide_invisible_words(initial_state) == expected
 
 
 def test_play_iterative():
