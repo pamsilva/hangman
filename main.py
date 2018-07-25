@@ -2,7 +2,7 @@ import copy
 
 from utils import INITIAL_ATTEMPTS, ATTEMPT_KEY, WORD_KEY, WORD_VISIBILITY_KEY, hide_invisible_words, display_state, \
     get_player_input
-from words_source import WordsSource
+from words_source import WordsSourceMemory
 
 
 def initialize_state(word):
@@ -34,7 +34,7 @@ def play(state, player_input):
 
 
 def run_game():
-    word = WordsSource().random_word()
+    word = WordsSourceMemory().random_word()
 
     state = initialize_state(word)
     right_guess = False

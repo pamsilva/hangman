@@ -2,6 +2,11 @@ from random import randint
 
 
 class WordsSource(object):
+    def random_word(self):
+        raise NotImplementedError('Abstract Class. Use a subclass instead.')
+
+
+class WordsSourceMemory(WordsSource):
     WORD_LIST = [
         'potato',
         'pizza',
