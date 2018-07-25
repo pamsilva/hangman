@@ -50,7 +50,7 @@ def run_game():
         )
 
     else:
-        print 'Sorry, but you lost, you ran out of attempts. You got to {}'.format(
+        print 'Sorry, but you lost, you ran out of attempts. You got to {}.'.format(
             hide_invisible_words(state)
         )
 
