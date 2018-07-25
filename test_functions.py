@@ -54,7 +54,7 @@ def test_play_whole_word():
         ATTEMPT_KEY: 6,
         WORD_KEY: 'potato',
         WORD_VISIBILITY_KEY: [
-            True, True, True, True, True, True
+            False, True, False, True, False, False
         ],
     }
     expected_right_guess = True

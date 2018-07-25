@@ -1,5 +1,7 @@
 ## Hangman
 
+Solution was programmed using python 2.7.
+
 ### Instructions
 
 - Clone the repo

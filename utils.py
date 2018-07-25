@@ -20,4 +20,7 @@ def display_state(state):
 
 
 def get_player_input():
-    return raw_input('Please insert your letter or attempt to guess the word. Then press enter.')
+    return raw_input(
+        'Please insert your letter or attempt to guess the word. '
+        'Then press enter:\n'
+    )
