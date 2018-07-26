@@ -1,13 +1,16 @@
 ## Hangman
 
-Solution was programmed using python 2.7.
+Solution was implemented in python 2.7.
 
 ### Instructions
 
-- Clone the repo
-- Create virtual environment
-- Install `requirements.txt`
-- run `python main.py`
+- Clone the repo;
+- Create virtual environment;
+- Install `requirements.txt`;
+- run `python main.py`.
+
+You will be prompted with the `_` characters representing the word you'll need to guess.
+You will have 9 attempts, which you can use to guess a letter or the full word.
 
 ### Assumptions
 
