@@ -17,5 +17,5 @@ class WordsSourceMemory(WordsSource):
 
     def random_word(self):
         return self.WORD_LIST[
-            randint(0, len(self.WORD_LIST))
+            randint(0, len(self.WORD_LIST) - 1)
         ]
