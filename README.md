@@ -8,6 +8,8 @@ Solution was programmed using python 2.7.
 - Create virtual environment
 - Install `requirements.txt`
 - run `python main.py`
+- run `py.test test_functions.py` to run the tests
+
 
 ### Assumptions
 
