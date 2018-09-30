@@ -1,16 +1,8 @@
 import copy
 
-from utils import INITIAL_ATTEMPTS, ATTEMPT_KEY, WORD_KEY, WORD_VISIBILITY_KEY, hide_invisible_words, display_state, \
-    get_player_input
 from words_source import WordsSourceMemory
-
-
-def initialize_state(word):
-    return {
-        ATTEMPT_KEY: INITIAL_ATTEMPTS,
-        WORD_KEY: word,
-        WORD_VISIBILITY_KEY: [False] * len(word)
-    }
+from utils import INITIAL_ATTEMPTS, ATTEMPT_KEY, WORD_KEY, WORD_VISIBILITY_KEY, hide_invisible_letters, display_state, \
+    get_player_input, initialize_state
 
 
 def play(state, player_input):
@@ -51,7 +43,7 @@ def run_game():
 
     else:
         print 'Sorry, but you lost, you ran out of attempts. You got to {}.'.format(
-            hide_invisible_words(state)
+            hide_invisible_letters(state)
         )
 
 
